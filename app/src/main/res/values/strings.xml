@@ -2,4 +2,6 @@
     <string name="app_name">Best Trips</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hi_sara">Hi, Sara!</string>
+    <string name="best_trips">Best Trips</string>
 </resources>

@@ -4,6 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/gray"
     tools:context=".fragments.TripsFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivUserImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:src="@drawable/user_image1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="@string/hi_sara"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@id/ivUserImg"
+        app:layout_constraintBottom_toBottomOf="@id/ivUserImg"
+        app:layout_constraintStart_toEndOf="@id/ivUserImg"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/best_trips"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/ivUserImg"
+        app:layout_constraintTop_toBottomOf="@id/ivUserImg" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTrips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
