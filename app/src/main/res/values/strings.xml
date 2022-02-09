@@ -4,4 +4,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hi_sara">Hi, Sara!</string>
     <string name="best_trips">Best Trips</string>
+    <string name="city_placeholder">City Placeholder</string>
+    <string name="country">Country</string>
 </resources>
