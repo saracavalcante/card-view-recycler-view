@@ -20,4 +20,11 @@ class TripsFragment : Fragment() {
     ): View = FragmentTripsBinding.inflate(inflater, container, false).apply {
         _binding = this
     }.root
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+
+    }
+
 }
