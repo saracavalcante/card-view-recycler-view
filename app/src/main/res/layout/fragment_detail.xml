@@ -5,35 +5,38 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/gray"
-    android:padding="32dp"
+    android:padding="16dp"
+    android:id="@+id/detailFragment"
     tools:context=".fragments.DetailFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 
-        <androidx.appcompat.widget.AppCompatImageView
+        <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/ivBigImg"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/big_image_6"
+            android:scaleType="centerCrop"
+            android:src="@drawable/_2885808_52d7_4f41_abb7_c67906333573_282_000000772668ea12_1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/roundedImage"/>
 
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:src="@drawable/ic_button"
-            app:layout_constraintTop_toTopOf="@id/ivBigImg"
-            app:layout_constraintStart_toStartOf="@id/ivBigImg"/>
+            app:layout_constraintStart_toStartOf="@id/ivBigImg"
+            app:layout_constraintTop_toTopOf="@id/ivBigImg" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvCityName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="32dp"
             android:text="Edinburgh"
             android:textColor="@color/orange"
             android:textSize="24sp"
@@ -45,18 +48,28 @@
             android:id="@+id/tvRating"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Rating"
+            android:layout_marginTop="8dp"
+            android:text="@string/rating"
             android:textSize="16sp"
             app:layout_constraintTop_toBottomOf="@id/tvCityName"
             app:layout_constraintStart_toStartOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ratingStars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/ic_rating"
+            app:layout_constraintTop_toTopOf="@id/tvRating"
+            app:layout_constraintStart_toEndOf="@id/tvRating"
+            app:layout_constraintBottom_toBottomOf="@id/tvRating"/>
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:text="Scotland"
-            android:textSize="16dp"
-            android:textColor="@color/black"
+            android:text="@string/scotland"
+            android:textSize="16sp"
             app:layout_constraintTop_toTopOf="@id/tvCityName"
             app:layout_constraintBottom_toBottomOf="@id/tvCityName"
             app:layout_constraintStart_toEndOf="@id/tvCityName" />
@@ -64,9 +77,10 @@
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
             android:text="The Auld Reekie is buzzing with new energy. The highly anticipated Hotel W, designed by Jestico and Whiles in conjunction with Allan Murray Architects, is opening next winter. And several other hotels have recently opened in and around the city — Marine North Berwick, the Market Street hotel, Rusacks St. Andrews, and ship-turned-luxury-hotel Fingal. Gleneagles Townhouse, a first-ever city outpost from the famed Gleneagles estate, is opening in the spring. St James Quarter, a developing area of the city, and where Hotel W is being built, is opening next year with 85 shops, 30 restaurants, and a cinema. New in whisky is the September christening of Johnnie Walker Princes Street. And promising to shake up the scotch scene in the capital city is Leith Distillery, opening in the summer. — Scott Bay"
-            app:layout_constraintTop_toBottomOf="@id/tvRating"/>
+            app:layout_constraintTop_toBottomOf="@id/tvRating" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -3,9 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Sara/Documents/Estudos/Estudos 2021/Android/besttrips_app/app/src/main/res/drawable/image.xml" value="0.2703125" />
         <entry key="..\:/Users/Sara/Documents/Estudos/Estudos 2021/Android/besttrips_app/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Sara/Documents/Estudos/Estudos 2021/Android/besttrips_app/app/src/main/res/layout/card_cell.xml" value="0.4" />
-        <entry key="..\:/Users/Sara/Documents/Estudos/Estudos 2021/Android/besttrips_app/app/src/main/res/layout/fragment_detail.xml" value="0.6" />
+        <entry key="..\:/Users/Sara/Documents/Estudos/Estudos 2021/Android/besttrips_app/app/src/main/res/layout/fragment_detail.xml" value="0.4299559471365639" />
         <entry key="..\:/Users/Sara/Documents/Estudos/Estudos 2021/Android/besttrips_app/app/src/main/res/layout/fragment_trips.xml" value="0.264" />
       </map>
     </option>

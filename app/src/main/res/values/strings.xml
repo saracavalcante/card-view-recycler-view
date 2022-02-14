@@ -6,4 +6,6 @@
     <string name="best_trips">Best Trips</string>
     <string name="city_placeholder">City Placeholder</string>
     <string name="country">Country</string>
+    <string name="rating">Rating</string>
+    <string name="scotland">Scotland</string>
 </resources>
